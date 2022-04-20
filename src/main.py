@@ -20,6 +20,8 @@ __pragma__('noalias', 'type')
 __pragma__('noalias', 'update')
 
 
+# Master
+
 def main():
     """
     Main game logic loop.
@@ -43,6 +45,7 @@ def main():
     for name in Object.keys(Game.spawns):
         spawn = Game.spawns[name]
         spawn_struct.run_spawn(spawn)
+
     
 
     console.log('Number of creeps:', len(Game.creeps))
